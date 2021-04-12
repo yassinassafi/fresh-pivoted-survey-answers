@@ -5,7 +5,7 @@ This is a project to verify one's ability to combine clean software engineering 
 The project aims to enforce an **“always fresh” data policy** in a database view which consists of survey answers data in usable format for analysis. There are 2 different scenarios to implement; a scenario in which we can directly create a stored function and trigger to update the view whenever changes have been made to the survey data, and another scanerio where we are restricted and can only have programmatic access from outside the database. In the latter, we'll have to implement a 'degraded' version of a trigger which updates the view whenever the python script is run.
 
 The database has the following diagram:
-![database-diagrame](https://user-images.githubusercontent.com/54726923/114434722-9d9a5f80-9bc3-11eb-853f-afb76b3e1f71.jpg){:height="50%" width="50%"}
+<img src="https://user-images.githubusercontent.com/54726923/114434722-9d9a5f80-9bc3-11eb-853f-afb76b3e1f71.jpg" width="700" height="500">
 
 
 ### Scenario 1 : we have privileges for creating stored functions and triggers in the database
