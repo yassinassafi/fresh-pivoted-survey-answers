@@ -30,3 +30,7 @@ In this case, we can use **programmatic access** to the database server via an O
 
 For achieving (3) above, a persistence component (Pickle, CSV, XML, JSON, etc.), storing the last known surveys’ structures should be in place. It is not acceptable to just recreate the view every time since **the Python code replacing the trigger behaviour must be as close as it can be, from “outside” the database.**
 
+**Notes**: 
+- When the question doesn’t belong to the survey, the answer value is put to *NULL*.
+- When the answer is not provided, *ANS_Q* is put to *-1* as a programmatic choice.
+
